@@ -22,6 +22,21 @@ public class TestHerencia {
 		
 		e1.pagar(2500);
 		e1.display();
+		
+		boolean rpta=comparoInstancias(e1);
+		if(rpta == true) {
+			System.out.println("e es un Gerente ");
+		} else {
+			System.out.println("e es una secretaria ");
+		}
+	}
+	
+	public static boolean comparoInstancias(Empleado e) {
+		if (e instanceof Gerente) {
+			return true;
+		} else {
+		return false;
+		}
 	}
 
 }
