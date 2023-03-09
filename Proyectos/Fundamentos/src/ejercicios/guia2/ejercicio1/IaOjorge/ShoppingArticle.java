@@ -43,5 +43,7 @@ public class ShoppingArticle {
 		return "ShoppingArticle [nombre=" + nombre + ", categoria=" + categoria + ", precio=" + precio + ", unidad="
 				+ unidad + "]";
 	}
-	
+	public String csvmode() {
+		return  nombre + ";" + categoria + ";" + precio + ";" + unidad;
+	}
 }
